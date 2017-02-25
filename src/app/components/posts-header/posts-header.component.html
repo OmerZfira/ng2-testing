@@ -1,0 +1,6 @@
+    <div class="progress-bar">
+        <!--<bar-filler>part: {{barData[0]}}, total: {{barData[1]}}</bar-filler>-->
+        <div class="bar-filler" [style.width.%]="postsPercent ? postsPercent : 0">
+        <div class="progress-bar-num">{{postsPercent}}% of posts read ({{postsRead}}/{{postsTotal}})</div>
+        </div>
+    </div>

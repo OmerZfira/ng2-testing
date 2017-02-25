@@ -1,0 +1,7 @@
+<ul class="clean-list">
+	<li *ngFor="let post of posts" [ngClass]="{selected : post.id === selectedPost.id, isRead : !!post.isRead}" (click)="selectPost(post)"
+		class="post-preview flex flex-center nowrap">
+		<span class="post-id">#{{post.id}}</span>
+		<span class="post-title">{{post.title}}</span>
+		</li>
+</ul>

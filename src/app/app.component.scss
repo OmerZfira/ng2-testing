@@ -1,0 +1,24 @@
+.app-posts-wrapper {
+	border: 3px solid black;
+	border-radius: 12px;
+}
+
+app-posts-header {
+	width: 100%;
+	border-bottom: 3px solid black;
+}
+
+.app-posts-display-wrapper {
+	width: 100%;
+	height: 450px;
+}
+
+app-posts-list {
+	flex: 1 1 30%;
+	overflow-y: auto;
+	border-right: 3px solid black;
+}
+
+app-posts-details {
+	flex: 1 1 70%;
+}

@@ -1,0 +1,38 @@
+.post-preview {
+	text-align: center;
+	border-top: 1px solid black;
+	padding: 5px;
+	cursor: pointer;
+	min-height: 45px;
+	font-weight: 700;
+	 
+
+	&:first-child {
+		border-top: none;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	&:nth-child(even) {
+		background-color: lightgray;
+	}
+	&:hover {
+		background-color: lightcoral;
+	}
+	&.selected {
+		background-color: lightblue;
+	}
+	&.isRead {
+		font-weight: 400;
+	}
+
+	.post-id {
+		flex-basis: 20%;
+	}
+
+	.post-title {
+		flex-basis: 80%;
+	}
+}
+
+

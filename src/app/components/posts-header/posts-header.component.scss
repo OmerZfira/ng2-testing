@@ -1,0 +1,21 @@
+.progress-bar {
+    // flex: 3 2 70%;
+    background:#FDFFE7;
+    border-radius: 15px 15px 0px 0px;
+    height: 100%;
+}
+
+.bar-filler {
+    background:  lightblue;
+    color: black;
+    border-radius: 15px 15px 15px 0px;
+    min-height: 20px;
+    transition: width 1.2s ease-in-out;
+    height: 100%;
+}
+
+.progress-bar-num {
+    position: absolute;
+    margin: 0 35%;
+    font-weight: bold;
+}

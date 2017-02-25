@@ -1,3 +1,11 @@
 <h1>
-  {{title}}
+	{{title}}
 </h1>
+<div class="app-posts-wrapper flex-column align-center">
+	<app-posts-header [postsTotal]="currPosts.length" [postsRead]="postsRead"></app-posts-header>
+	<div class="app-posts-display-wrapper flex nowrap justify-center">
+		<app-posts-list [posts]="currPosts" [selectedPost]="selectedPost" (scroll)="checkBottom($event)" 
+						(onSelect)="selectPost($event)" class="flex-column"></app-posts-list>
+		<app-posts-details [selectedPost]="selectedPost"></app-posts-details>
+	</div>
+</div>
